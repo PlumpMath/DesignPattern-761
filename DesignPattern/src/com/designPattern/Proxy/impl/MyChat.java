@@ -6,18 +6,19 @@ package com.designPattern.Proxy.impl;
 import com.designPattern.Proxy.Chat;
 
 /**
- * @author zibin
- *
+ * @author zibin 
+ * å…·ä½“è§’è‰²ç±»ï¼Œè¢«ä»£ç†çš„ç±»
  */
 public class MyChat implements Chat {
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see com.designPattern.Proxy.Chat#reply(java.lang.String)
 	 */
 	@Override
 	public void reply(String message) {
-		System.out.println("ĞèÒªÎÒÇ××Ô»Ø¸´µÄÄÚÈİ¡£¡£¡£");
-
+		System.out.println("éœ€è¦æˆ‘äº²è‡ªå›å¤çš„å†…å®¹ã€‚ã€‚ã€‚");
 	}
 
 }

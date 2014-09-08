@@ -6,27 +6,26 @@ package com.designPattern.Proxy.impl;
 import com.designPattern.Proxy.Chat;
 
 /**
- * @author zibin
- * 
+ * @author zibin 
+ * ä»£ç†ç±»ï¼ŒæŒæœ‰è¢«ä»£ç†ç±»çš„ä¸€ä¸ªå¼•ç”¨
  */
 public class ChatProxy implements Chat {
 
-	private MyChat myChat = new MyChat();
+	private Chat myChat = new MyChat();
 
-	@Override
 	public void reply(String message) {
-		if (message.equals("hi,ÄãºÃ")) {
-			System.out.println("ÄãÒ²ºÃ");
-		} else if (message.equals("Äã´ÓÄÄÀïÀ´")) {
-			System.out.println("ÎÒÀ´×ÔÖĞ¹ú");
-		} else if (message.equals("Äã¶à´óÁË£¿")) {
-			System.out.println("ÎÒ½ñÄê22À²");
-		} else if (message.equals("Éí¸ß¶àÉÙÑ½")) {
-			System.out.println("ÎÒÉí¸ß178cm");
+
+		if (message.equals("hi,ä½ å¥½")) {
+			System.out.println("hi, ä½ ä¹Ÿå¥½");
+		} else if (message.equals("ä½ ä»å“ªé‡Œæ¥ï¼Ÿ")) {
+			System.out.println("æˆ‘æ¥è‡ªä¸­å›½ï¼");
+		} else if (message.equals("ä½ å¤šå¤§äº†ï¼Ÿ")) {
+			System.out.println("æˆ‘ä»Šå¹´22å•¦ï¼");
+		} else if (message.equals("èº«é«˜å¤šå°‘å‘€ï¼Ÿ")) {
+			System.out.println("æˆ‘èº«é«˜178cm");
 		} else {
 			myChat.reply(message);
 		}
-
 	}
 
 }
