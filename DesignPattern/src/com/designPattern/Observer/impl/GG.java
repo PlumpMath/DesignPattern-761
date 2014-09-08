@@ -3,14 +3,21 @@ package com.designPattern.Observer.impl;
 import java.util.Observable;
 import java.util.Observer;
 
+/*
+ * GGä½œä¸ºMMçš„è§‚å¯Ÿè€… å®ç°äº†Oberveræ¥å£
+ */
 public class GG implements Observer {
-
-	@Override
-	public void update(Observable arg0, Object arg1) {
-		Event art = (Event)arg1;
-		System.out.println("MM ÓĞĞÂÇé¿öÁË£¬¿ìÀ´¿´°É£¡");
-		System.out.println("Çé¿ö±êÌâÎª£º"+ art.getTitle());
-		System.out.println("Çé¿öÄÚÈİÎª£º"+art.getContent() );
+	/*
+	 * è¦†å†™updateæ–¹æ³• å®ç°GGè‡ªå·±çš„ä¸šåŠ¡æ–¹æ³•
+	 * @see java.util.Observer#update(java.util.Observable, java.lang.Object)
+	 */
+	public void update(Observable o, Object arg) {
+		Event art = (Event)arg;
+		
+		System.out.println("MMæœ‰æ–°æƒ…å†µäº†ï¼Œå¿«æ¥çœ‹å§!");
+		System.out.println("æƒ…å†µæ ‡é¢˜ä¸ºï¼š" + art.getTitle());
+		System.out.println("æƒ…å†µå†…å®¹ä¸º:" + art.getContent());
 	}
 
 }
+

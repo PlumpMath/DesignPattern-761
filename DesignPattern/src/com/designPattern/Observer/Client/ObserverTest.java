@@ -3,15 +3,13 @@ package com.designPattern.Observer.Client;
 import com.designPattern.Observer.impl.GG;
 import com.designPattern.Observer.impl.MM;
 
+/*
+ * è§‚å¯Ÿè€…æ¨¡å¼æµ‹è¯•å®¢æˆ·ç«¯
+ */
 public class ObserverTest {
-
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) {
 		MM user = new MM();
 		user.addObserver(new GG());
-		user.publishEvent("ÎÒ¿ªÊ¼±ä»¯ÁË", "oh my god,ÕæµÄÓĞĞÂÇé¿öÁË£¡");
+		user.publishEvent("æˆ‘æœ‰æ–°æƒ…å†µå•¦", "Oh My God,æˆ‘æœ‰æ–°æƒ…å†µå•¦ï¼ŒHelpï¼ï¼ï¼");
 	}
-
 }

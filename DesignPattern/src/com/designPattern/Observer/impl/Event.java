@@ -1,5 +1,6 @@
 package com.designPattern.Observer.impl;
 
+
 public class Event {
 	
 	private String title;

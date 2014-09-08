@@ -2,15 +2,17 @@ package com.designPattern.Observer.impl;
 
 import java.util.Observable;
 
+/*
+ * MMä½œä¸ºè¢«è§‚å¯Ÿè€… ç»§æ‰¿äº†Observableç±»
+ */
 public class MM extends Observable {
-	public void publishEvent(String title,String content){
+	
+	public void publishEvent(String title,String cotent) {
 		Event art = new Event();
 		art.setTitle(title);
-		art.setContent(content);
-		System.out.println("MMÓÐÐÂÇé¿öÁË£¬±êÌâ£º"+title+"£¬ÄÚÈÝ£º"+content);
+		art.setContent(cotent);
+		System.out.println("MMæœ‰æ–°æƒ…å†µäº†ï¼Œæ ‡é¢˜:" + title + ",å†…å®¹:" + cotent);
 		this.setChanged();
 		this.notifyObservers(art);
 	}
-	
-
 }
