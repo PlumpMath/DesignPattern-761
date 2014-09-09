@@ -10,7 +10,7 @@ public class AdapterObjectTesr {
 	 */
 	public static void main(String[] args) {
 		AdapterObject aObject = new AdapterObject(new Current());
-		aObject.use18v();
+		aObject.use18V();
 
 	}
 

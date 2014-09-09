@@ -10,7 +10,6 @@ import com.designPattern.Adapter.impl.AdapterClass;
  *
  */
 public class AdapterClassTest {
-
 	/**
 	 * @param args
 	 */
